@@ -1,0 +1,620 @@
+/* frames and containers*/
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: %; /* 1:1 Aspect Ratio */
+}
+.image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+.info101 {
+  position: center;
+  overflow: hidden;
+  width: 100%;
+  padding-top: ; /* 1:1 Aspect Ratio */
+  margin: 0px;
+}
+.iframe1 {
+  position: absolute;
+  float: left;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 49%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+  align: left;
+}
+
+.iframe2 {
+  position: absolute;
+  float: left;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 49%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+  aligh: left;
+}
+.top2_container {
+  float:center;
+  width:100%;
+  height:300px;
+  border:none;
+}
+.menu {
+  float:right;
+  width:100vw;
+  height:500px;
+  border:none;
+}
+.right_container {
+  float:right;
+  width:50%;
+  height:65em;
+  border:none;
+}
+.left_container {
+  float:left;
+  width:50%;
+  height:65em;
+  border:none;
+}
+.chart_container {
+  float:left;
+  width:100%;
+  height:500px;
+  border:none;
+}
+.footer_container {
+  float:left;
+  width:100%;
+  height:;
+  border:none;
+}
+.footer {
+  position: center;
+  overflow: hidden;
+  width: ;
+  padding-top: ; /* 1:1 Aspect Ratio */
+  margin: 10px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: ;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*html pages*/
+.rules {
+  float:left;
+  margin: 10px 10px;
+}
+
+
+
+
+/* sticky menu*/
+.top_container {
+  background-color: ;
+  padding: 18px;
+  text-align: center;
+}
+
+.sticky_container { /*.header, the period "." infront allow for different class, "#" would be for different id*/
+  padding: ;
+  background: ;
+  width: 100%;
+  color: ;
+  text-align: center; /*🐠*/
+  position: ; /*float:right will not work with position:fixed*/
+  right: 0px; /*right:0 and position:fixed will allow for header to be on the right and also stick*/
+  border-width: ;
+  border-style: ;
+  border-color: ;
+}
+
+.content {
+  padding: 0px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 0px;
+}
+
+
+
+
+/*button links in sticky menu*/
+.link-button{
+  text-decoration: none; /* Removes underline */
+  color: white;
+  font-size: 0.8em;
+  background: #444;
+  padding: 8px 8px;
+  border-radius: 0px;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;  /* Stops text wrapping */
+}
+.link-button:hover{
+  background: #000;  /* Adds hover effect 138496*/
+}
+.link-button:active{
+  background: #04404a;  /* Adds click effect */
+}
+/*button links in sticky menu*/
+.link-button1{
+  text-decoration: none; /* Removes underline */
+  color: white;
+  font-size: 0.8em;
+  background: #888;
+  padding: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;  /* Stops text wrapping */
+}
+.link-button1:hover{
+  background: #000;  /* Adds hover effect */
+}
+.link-button1:active{
+  background: #04404a;  /* Adds click effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*images resize on hover*/
+.img_opacity1 {
+  opacity: ;
+  vertical-align: middle;
+}
+.img_center {
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px;
+}
+.img_right { /*.header, the period "." infront allow for different class, "#" would be for different id*/
+  padding: ;
+  background: ;
+  width: 50px;
+  color: ;
+  text-align: right; /*🐠*/
+  position: ; /*float:right will not work with position:fixed*/
+  right: 0px; /*right:0 and position:fixed will allow for header to be on the right and also stick*/
+  border-width: ;
+  border-style: ;
+  border-color: ;
+  float: right;
+  margin: 10px;
+}
+.img_left { /*.header, the period "." infront allow for different class, "#" would be for different id*/
+  padding: 5px;
+  background: ;
+  width: 100px;
+  color: ;
+  text-align: right; /*🐠*/
+  position: right; /*float:right will not work with position:fixed*/
+  right: 0px; /*right:0 and position:fixed will allow for header to be on the right and also stick*/
+  border-width: 2px ;
+  border-style: dotted ;
+  border-color: #555;
+  float: left;
+  margin: 10px;
+}
+.img_coin1 { /*.header, the period "." infront allow for different class, "#" would be for different id*/
+  padding: ;
+  background: ;
+  width: 25px;
+  color: ;
+  text-align: right; /*🐠*/
+  position: ; /*float:right will not work with position:fixed*/
+  right: 0px; /*right:0 and position:fixed will allow for header to be on the right and also stick*/
+  border-width: ;
+  border-style: ;
+  border-color: ;
+  vertical-align: middle;
+}
+.img:hover{
+  /*
+  color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(3);
+  -ms-transform: scale(6); /* IE 9
+  -webkit-transform: scale(6); /* Safari and Chrome */
+  }
+#borderimg1 {
+  border: 30px solid transparent;
+  padding: 0px;
+  border-image: url(img/stamp2.png) round 30 ;
+  width: 100px;
+             filter: drop-shadow(5px 5px 5px #222);
+}
+
+ .imageContainer {
+       width:30px;
+       height:30px;
+       background-image: url(img/compass.png);
+ }
+
+input[type=text]{
+  color: white;
+  background:black;
+  text-align: right;
+}
+
+
+
+
+
+
+/* button not fixed width*/
+button {
+  display: inline-block;
+  background-color: #111111;
+  border-radius: 3px;
+  border: 2px double #444444;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 12px;
+  padding: 0px;
+  width: ;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 0px;
+  }
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+button:hover {
+  background-color: #0033ff;
+  }
+button:hover span {
+  padding-right: 25px;
+  }
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+/* button fixed width
+button {
+  display: inline-block;
+  background-color: #111111;
+  border-radius: 3px;
+  border: 2px double #444444;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 10px;
+  padding: 0px;
+  width: 35px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 0px;
+  }
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+button:hover {
+  background-color: #666666;
+  }
+button:hover span {
+  padding-right: 25px;
+  }
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+  */
+
+
+
+
+button_reg {
+             display: inline-block;
+             background-color: #444444;
+             border-radius: 3px;
+             border: 2px double #444444;
+             color: #eeeeee;
+             text-align: center;
+             font-size: 10px;
+             padding: 0px;
+             width: 35px;
+             transition: all 0.3s;
+             cursor: pointer;
+             margin: 0px;
+           }
+
+     button_a {
+             display: inline-block;
+             background-color: green;
+             border-radius: 3px;
+             border: 2px double green;
+             color: #eeeeee;
+             text-align: center;
+             font-size: 10px;
+             padding: 0px;
+             width: 35px;
+             transition: all 0.3s;
+             cursor: pointer;
+             margin: 0px;
+           }
+           button_b {
+                   display: inline-block;
+                   background-color: purple;
+                   border-radius: 3px;
+                   border: 2px double purple;
+                   color: #eeeeee;
+                   text-align: center;
+                   font-size: 10px;
+                   padding: 0px;
+                   width: 35px;
+                   transition: all 0.3s;
+                   cursor: pointer;
+                   margin: 0px;
+                 }
+                 button_c {
+                         display: inline-block;
+                         background-color: black;
+                         border-radius: 3px;
+                         border: 2px double black;
+                         color: #eeeeee;
+                         text-align: center;
+                         font-size: 10px;
+                         padding: 0px;
+                         width: 35px;
+                         transition: all 0.3s;
+                         cursor: pointer;
+                         margin: 0px;
+                       }
+
+
+
+
+
+
+
+/*form checkboxes*/
+input.red {
+transform: scale(/*preferred magnification*/);
+width: 14px;
+height: 14px;
+background-color: #ffffff;
+border-radius: 999px;
+filter: invert(100%) hue-rotate(300deg) brightness(0.5);
+}
+input.green {
+transform: scale(/*preferred magnification*/);
+width: 14px;
+height: 14px;
+background-color: #ffffff;
+border-radius: 999px;
+filter: invert(100%) hue-rotate(80deg) brightness(0.5);
+}
+input.gray {
+transform: scale(/*preferred magnification*/);
+width: 14px;
+height: 14px;
+background-color: #ffffff;
+border-radius: 999px;
+filter: invert(100%) hue-rotate(20deg) brightness(0.5);
+}
+input.graysm {
+transform: scale(/*preferred magnification*/);
+width: 10px;
+height: 10px;
+background-color: #000000;
+border-radius: 999px;
+filter: invert(100%) hue-rotate(20deg) brightness(0.7);
+}
+
+
+
+
+/*links*/
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+
+/*main */
+
+body {
+  font-size: 1em;
+  font-family: tahoma;
+  background: #000;
+  }
+
+/*text*/
+text_bid {
+  color: #888888;
+  font-size: 1em;
+  }
+tp {
+  color: #555555;
+  font-size: 1em;
+  }
+text_a {
+  color: #33ffff;
+  font-size: 10px;
+  }
+text_b {
+  color: red;
+  font-size: 10px;
+  }
+text_c {
+  color: #555555;
+  font-size: 10px;
+  }
+text_d {
+  color: #ffffff;
+  font-size: 10px;
+  }
+text_e { /*notes green */
+  color: #a0a0a0;
+  font-size: 12px;
+  text-align: left
+  }
+text_f {
+  color: #a0a0a0;
+  font-size: 12px;
+  text-align: left
+  }
+text_g {
+  color: #a0a0a0;
+  font-size: 12px;
+  text-align: left
+  }
+text_link {
+  color: #33ffff;
+  font-size: 12px;
+}
+t_coin1 {
+  color: #3333ff;
+  font-size: 10px;
+  font-weight: bold;
+}
+t_whi {
+  color: #ffffff;
+  font-size: 12px;
+}
+t_gre {
+  color: #33ffff;
+  font-size: 12px;
+}
+text_footer {
+  color: #a0a0a0;
+  font-size: 12px;
+  text-align: left
+  }
+text_title {
+  font-family: fantasy;
+  color: #66ccff;
+  font-size: 60px;
+  text-align: left
+  }
+text_bible_2 {
+  color: #66ccff;
+  font-size: 12px;
+  }
+.text_bible { /*this is a DIV class = " " */
+  color: #a0a0a0;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  }
+.text_info101 { /*this is a DIV class = " " */
+  color: #a0a0a0;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  }
+t_none { /*this is a DIV class = " " */
+  color: #a0a0a0;
+  font-size: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+  }
+.text { /*this is a DIV class = " " */
+  color: #a0a0a0;
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0px;
+  padding: 10px;
+  }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>treasurehidinafield: rules</title>
+    <body style="background-color:#222;">
+</head>
+
+<!--
+<form action="/url" method="GET">
+        <p><text_h>long signal</text_h></p>
+        <input type="text">
+    </form>
+<form action="/url" method="GET">
+        <p><text_h>short signal</text_h></p>
+        <input type="text">
+    </form>
+-->
+<div>
+<dt><text_g>👍 RATE SETUP</text_g>
+<text_f><input type="checkbox" class="green" id="1" name="count[]" value="1" onclick="green_count()"><label for="1">10    </label></text_f>
+<text_f><input type="checkbox" class="green" id="2" name="count[]" value="1" onclick="green_count()"><label for="2">9    </label></text_f>
+<text_f><input type="checkbox" class="green" id="3" name="count[]" value="1" onclick="green_count()"><label for="3">8    </label></text_f>
+<text_f><input type="checkbox" class="green" id="4" name="count[]" value="1" onclick="green_count()"><label for="4">7    </label></text_f>
+<dt><text_g>🌜# of red (3/day)    </text_g>
+<text_a><input type="checkbox" class="gray" id="6" name="count[]" value="1" onclick="green_count()"><label for="6">🙅    </label></text_a>
+<text_f><input type="checkbox" class="gray" id="7" name="count[]" value="1" onclick="green_count()"><label for="7">🙅    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="8" name="count[]" value="1" onclick="green_count()"><label for="8">🙅    </label></text_f>
+<p style="font-size:10px"></p>
+<text_e><input type="checkbox" class="gray" id="10" name="count[]" value="1" onclick="green_count()"checked><label for="10">🧑‍🍳 LET THE PRICE COME 2 YOU    </label></text_e>
+<dt><text_e><input type="checkbox" class="gray" id="11" name="count[]" value="1" onclick="green_count()"checked><label for="11">COMPARE REG, 3L, 3S    </label></text_e>
+<p style="font-size:10px"></p>
+<dt><text_g>🌝ENTRY    </text_g>
+<dt><text_f><input type="checkbox" class="gray" id="14" name="count[]" value="1" onclick="green_count()"checked><label for="14">manually (alert entries lag)    </label></text_f>
+<dt><text_f><input type="checkbox" class="gray" id="15" name="count[]" value="1" onclick="green_count()"checked><label for="15">the next 2nd zone    </label></text_f>
+<dt><text_f><input type="checkbox" class="gray" id="16" name="count[]" value="1" onclick="green_count()"checked><label for="16">+senkou, +rsi, +\/\/    </label></text_f>
+<dt><text_f><input type="checkbox" class="gray" id="17" name="count[]" value="1" onclick="green_count()"checked><label for="17">stop "hunt" above/below @wait-it-out areas    </label></text_f>
+<dt><text_f><input type="checkbox" class="gray" id="18" name="count[]" value="1" onclick="green_count()"checked><label for="18">look for confirmation(s) of trend    </label></text_f>
+<p style="font-size:10px"></p>
+<dt><text_e>🐮🐻 WAIT-IT-OUT    </text_e>
+<dt><text_e>zone distal line being tested<input type="checkbox" class="gray" id="21" name="count[]" value="1" onclick="green_count()"><label for="21">demand     </label></text_e>
+<text_e><input type="checkbox" class="gray" id="22" name="count[]" value="1" onclick="green_count()"><label for="22">supply     </label></text_e>
+<dt><text_e>cloud  senkou 5-30m close<input type="checkbox" class="green" id="23" name="count[]" value="1" onclick="green_count()"><label for="23">above    </label></text_e>
+<text_e><input type="checkbox" class="red" id="24" name="count[]" value="1" onclick="green_count()"><label for="24">below    </label></text_e>
+<text_f><input type="checkbox" class="gray" id="25" name="count[]" value="1" onclick="green_count()"><label for="25">M    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="26" name="count[]" value="1" onclick="green_count()"><label for="26">W    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="27" name="count[]" value="1" onclick="green_count()"><label for="27">D    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="28" name="count[]" value="1" onclick="green_count()"><label for="28">4h    </label></text_f>
+<dt><text_e>+entering into cloud from</text_e>
+<text_e><input type="checkbox" class="gray" id="30" name="count[]" value="1" onclick="green_count()"><label for="30">below    </label></text_e>
+<text_e><input type="checkbox" class="gray" id="31" name="count[]" value="1" onclick="green_count()"><label for="31">above    </label></text_e>
+<dt><text_e>\/\/ forming</text_e>
+<text_e><input type="checkbox" class="gray" id="33" name="count[]" value="1" onclick="green_count()"><label for="33">peak    </label></text_e>
+<text_e><input type="checkbox" class="gray" id="34" name="count[]" value="1" onclick="green_count()"><label for="34">valley    </label></text_e>
+<p style="font-size:10px"></p>
+<dt><text_e>🎏 ZONE    </text_e>
+<dt><text_e><input type="checkbox" class="green" id="37" name="count[]" value="1" onclick="green_count()"><label for="37">demand    </label></text_e>
+<text_e><input type="checkbox" class="red" id="38" name="count[]" value="1" onclick="green_count()"><label for="38">supply    </label></text_e>
+<dt><text_f><input type="checkbox" class="gray" id="39" name="count[]" value="1" onclick="green_count()"><label for="39">M    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="40" name="count[]" value="1" onclick="green_count()"><label for="40">W    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="41" name="count[]" value="1" onclick="green_count()"><label for="41">D    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="42" name="count[]" value="1" onclick="green_count()"><label for="42">4h    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="43" name="count[]" value="1" onclick="green_count()"><label for="43">1h    </label></text_f>
+<dt><text_f><input type="checkbox" class="gray" id="44" name="count[]" value="1" onclick="green_count()"><label for="44">30m (<4 candles)    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="45" name="count[]" value="1" onclick="green_count()"><label for="45">15(6)    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="46" name="count[]" value="1" onclick="green_count()"><label for="46">10(6) W    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="47" name="count[]" value="1" onclick="green_count()"><label for="47">5(16) W    </label></text_f>
+<p style="font-size:10px"></p>
+<dt><text_e>🖐 \/\/ FORMING, pay attention to HTF & HL, LH</text_e>
+<dt><text_f><input type="checkbox" class="green" id="50" name="count[]" value="1" onclick="green_count()"><label for="50">W \    </label></text_f>
+<text_f><input type="checkbox" class="red" id="51" name="count[]" value="1" onclick="green_count()"><label for="51">\/    </label></text_f>
+<text_f><input type="checkbox" class="green" id="52" name="count[]" value="1" onclick="green_count()"><label for="52">\/\    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="53" name="count[]" value="1" onclick="green_count()"><label for="53">\/\/    </label></text_f>
+<text_f><input type="checkbox" class="red" id="54" name="count[]" value="1" onclick="green_count()"><label for="54">🤷‍♂️\/\/\    </label></text_f>
+<dt><text_f><input type="checkbox" class="green" id="55" name="count[]" value="1" onclick="green_count()"><label for="55">D \    </label></text_f>
+<text_f><input type="checkbox" class="red" id="56" name="count[]" value="1" onclick="green_count()"><label for="56">\/    </label></text_f>
+<text_f><input type="checkbox" class="green" id="57" name="count[]" value="1" onclick="green_count()"><label for="57">\/\    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="58" name="count[]" value="1" onclick="green_count()"><label for="58">\/\/    </label></text_f>
+<text_f><input type="checkbox" class="red" id="59" name="count[]" value="1" onclick="green_count()"><label for="59">🤷‍♂️\/\/\    </label></text_f>
+<dt><text_f><input type="checkbox" class="green" id="60" name="count[]" value="1" onclick="green_count()"><label for="60">4h \    </label></text_f>
+<text_f><input type="checkbox" class="red" id="61" name="count[]" value="1" onclick="green_count()"><label for="61">\/    </label></text_f>
+<text_f><input type="checkbox" class="green" id="62" name="count[]" value="1" onclick="green_count()"><label for="62">\/\    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="63" name="count[]" value="1" onclick="green_count()"><label for="63">\/\/    </label></text_f>
+<text_f><input type="checkbox" class="red" id="64" name="count[]" value="1" onclick="green_count()"><label for="64">🤷‍♂️\/\/\    </label></text_f>
+<dt><text_f><input type="checkbox" class="green" id="65" name="count[]" value="1" onclick="green_count()"><label for="65"><4h \    </label></text_f>
+<text_f><input type="checkbox" class="red" id="66" name="count[]" value="1" onclick="green_count()"><label for="66">\/    </label></text_f>
+<text_f><input type="checkbox" class="green" id="67" name="count[]" value="1" onclick="green_count()"><label for="67">\/\    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="68" name="count[]" value="1" onclick="green_count()"><label for="68">\/\/    </label></text_f>
+<text_f><input type="checkbox" class="red" id="69" name="count[]" value="1" onclick="green_count()"><label for="69">🤷‍♂️\/\/\    </label></text_f>
+<dt><text_f><input type="checkbox" class="red" id="70" name="count[]" value="1" onclick="green_count()"><label for="70">🙅‍♂️\/\/\/\ 4th x; set entry at the next nearest zone    </label></text_f>
+<p style="font-size:10px"></p>
+<dt><text_e>⛅️ CLOUD    </text_e>
+<dt><text_f>⤵ thick<input type="checkbox" class="green" id="73" name="count[]" value="1" onclick="green_count()"><label for="73">M    </label></text_f>
+<text_f><input type="checkbox" class="green" id="74" name="count[]" value="1" onclick="green_count()"><label for="74">W    </label></text_f>
+<text_f><input type="checkbox" class="green" id="75" name="count[]" value="1" onclick="green_count()"><label for="75">D    </label></text_f>
+<text_f><input type="checkbox" class="green" id="76" name="count[]" value="1" onclick="green_count()"><label for="76">4h    </label></text_f>
+<dt><text_f>⤵ thin<input type="checkbox" class="red" id="77" name="count[]" value="1" onclick="green_count()"><label for="77">M    </label></text_f>
+<text_f><input type="checkbox" class="red" id="78" name="count[]" value="1" onclick="green_count()"><label for="78">W    </label></text_f>
+<text_f><input type="checkbox" class="red" id="79" name="count[]" value="1" onclick="green_count()"><label for="79">D    </label></text_f>
+<text_f><input type="checkbox" class="red" id="80" name="count[]" value="1" onclick="green_count()"><label for="80">4h    </label></text_f>
+<dt><text_f>⤴ thick<input type="checkbox" class="red" id="81" name="count[]" value="1" onclick="green_count()"><label for="81">M    </label></text_f>
+<text_f><input type="checkbox" class="red" id="82" name="count[]" value="1" onclick="green_count()"><label for="82">W    </label></text_f>
+<text_f><input type="checkbox" class="red" id="83" name="count[]" value="1" onclick="green_count()"><label for="83">D    </label></text_f>
+<text_f><input type="checkbox" class="red" id="84" name="count[]" value="1" onclick="green_count()"><label for="84">4h    </label></text_f>
+<dt><text_f>⤴ thin<input type="checkbox" class="green" id="85" name="count[]" value="1" onclick="green_count()"><label for="85">M    </label></text_f>
+<text_f><input type="checkbox" class="green" id="86" name="count[]" value="1" onclick="green_count()"><label for="86">W    </label></text_f>
+<text_f><input type="checkbox" class="green" id="87" name="count[]" value="1" onclick="green_count()"><label for="87">D    </label></text_f>
+<text_f><input type="checkbox" class="green" id="88" name="count[]" value="1" onclick="green_count()"><label for="88">4h    </label></text_f>
+<dt><text_e>+entered into ☁️ from</text_e>
+<text_e><input type="checkbox" class="red" id="90" name="count[]" value="1" onclick="green_count()"><label for="90">above    </label></text_e>
+<text_e><input type="checkbox" class="green" id="91" name="count[]" value="1" onclick="green_count()"><label for="91">below    </label></text_e>
+<p style="font-size:10px"></p>
+<dt><text_e>🐠RSI    </text_e>
+<dt><text_f>entry<input type="checkbox" class="gray" id="94" name="count[]" value="1" onclick="green_count()"><label for="94">dca next zone/signal    </label></text_f>
+<dt><text_e>oversold<input type="checkbox" class="green" id="95" name="count[]" value="1" onclick="green_count()"><label for="95">W    </label></text_e>
+<text_f><input type="checkbox" class="green" id="96" name="count[]" value="1" onclick="green_count()"><label for="96">D    </label></text_f>
+<text_f><input type="checkbox" class="green" id="97" name="count[]" value="1" onclick="green_count()"><label for="97">4h    </label></text_f>
+<dt><text_f>overbought<input type="checkbox" class="red" id="98" name="count[]" value="1" onclick="green_count()"><label for="98">W    </label></text_f>
+<text_f><input type="checkbox" class="red" id="99" name="count[]" value="1" onclick="green_count()"><label for="99">D    </label></text_f>
+<text_f><input type="checkbox" class="red" id="100" name="count[]" value="1" onclick="green_count()"><label for="100">4h    </label></text_f>
+
+<p style="font-size:10px"></p>
+<dt><text_e>🚥 HTF CANDLES    </text_e>
+<dt><text_f><input type="checkbox" class="green" id="104" name="count[]" value="1" onclick="green_count()"><label for="104">bull    </label></text_f>
+<text_f><input type="checkbox" class="red" id="105" name="count[]" value="1" onclick="green_count()"><label for="105">bear engulfing    </label></text_f>
+<dt><text_f><input type="checkbox" class="green" id="106" name="count[]" value="1" onclick="green_count()"><label for="106">bull    </label></text_f>
+<text_f><input type="checkbox" class="red" id="107" name="count[]" value="1" onclick="green_count()"><label for="107">bear star, other    </label></text_f>
+<dt><text_f><input type="checkbox" class="green" id="108" name="count[]" value="1" onclick="green_count()"><label for="108">HL    </label></text_f>
+<text_f><input type="checkbox" class="red" id="109" name="count[]" value="1" onclick="green_count()"><label for="109">LH    </label></text_f>
+
+<p style="font-size:10px"></p>
+<dt><text_e>🌈 EMA CROSSINGS    </text_e>
+<dt><text_f><input type="checkbox" class="green" id="113" name="count[]" value="1" onclick="green_count()"><label for="113">close 1-2x    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="114" name="count[]" value="1" onclick="green_count()"><label for="114">🙅‍♂️thrice    </label></text_f>
+<dt><text_f><input type="checkbox" class="green" id="115" name="count[]" value="1" onclick="green_count()"><label for="115">above    </label></text_f>
+<text_f><input type="checkbox" class="red" id="116" name="count[]" value="1" onclick="green_count()"><label for="116">below    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="117" name="count[]" value="1" onclick="green_count()"><label for="117">30m +    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="118" name="count[]" value="1" onclick="green_count()"><label for="118">15    </label></text_f>
+<text_f><input type="checkbox" class="gray" id="119" name="count[]" value="1" onclick="green_count()"><label for="119">5    </label></text_f>
+
+<p style="font-size:10px"></p>
+</div>
+<br><div class="text">🌜🌝 these are some rules to keep in mind while pin pointing strong supply/demand zones. for a thorough explanation on how to apply the rule-checklist, <a href="" target="_blank">click here to watch a quick video tutorial</a>. it will go over very common candle formations, ichimoku clouds, \/\/ formations, HL, LH, etc, all may be great clues in making high-probability entries. if that sounds too much to juggle with, don't worry, <t_whi>stay tune to the HEARTHesaurus & subscribe to the youtube channel for up to date market info and trade signals.
+
+
+<p style="font-size:10px"></p>
+
+
+</body></html>
